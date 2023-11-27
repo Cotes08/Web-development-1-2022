@@ -1,0 +1,110 @@
+cuestionario
+{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+pregunta
+{
+    margin: 10px;
+    display: block;
+    margin-top: 20px;
+}
+
+enunciado
+{
+    margin-bottom: 15px;
+    display: block;
+    font-size: 18px;
+}
+
+respuesta
+{
+    display: block;
+    margin-left: 50px;
+    font-size: 16px;
+    
+}
+
+respuesta_1, respuesta_2, respuesta_3, respuesta_4
+{
+    display: block;
+    margin-left: 50px;
+    font-size: 16px;
+  
+}
+
+orden_1, orden_2, orden_3, orden_4
+{
+    display: block;
+    margin-left: 50px;
+    font-size: 16px;
+
+}
+
+[respuesta = test]
+{
+	display: list-item;
+    list-style: upper-alpha inside;
+}
+
+[respuesta = multiple]
+{
+    display: list-item;
+}
+
+[respuesta = numerica]
+{
+	display: list-item;
+}
+
+[respuesta = booleano]
+{
+	display: list-item;
+}
+
+[respuesta = libre]
+{
+	display: list-item;
+}
+
+[orden = "1"]
+{
+	color: green;
+}
+
+[orden = "2"]
+{
+	color: rgb(37, 149, 224)
+}
+
+[orden = "3"]
+{
+	color: orange;
+}
+
+[orden = "4"]
+{
+	color: red;
+}
+
+[opcion = correcta]
+{
+    color: green;
+}
+
+[opcion = incorrecta]
+{
+    color: red;
+}
+
+[autor = "jorge"]
+{
+
+    color: rgb(24, 0, 160);
+}
+
+[autor = "manuel"]
+{
+    color: rgb(255, 0, 221);
+}

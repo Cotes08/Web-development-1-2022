@@ -1,0 +1,409 @@
+<?xml version="1.0" standalone="no" ?>
+<?xml-stylesheet type="text/css" href="css/examen.css"?>
+<!DOCTYPE cuestionario SYSTEM "dtd/gramatica.dtd"> 
+
+<cuestionario>
+	<pregunta tipo = "test" tema = "1" id = "p1">
+
+        <enunciado> XML es un lenguaje marcado que permite... </enunciado> 
+
+		<respuestas>
+            <test>
+                <respuesta_1 opcion="correcta" respuesta = "test">
+                    Almacenar e intercambiar datos de forma universal e independiente de la plataforma
+                </respuesta_1>
+                <respuesta_2 opcion="incorrecta" respuesta = "test">
+                    Recrear escenas de vídeos de Mister Jagger
+                </respuesta_2>
+                <respuesta_3 opcion="incorrecta" respuesta = "test">	
+                    Al navegador incorporar una máquina virtual de java capaz de interpretar bytecodes
+                </respuesta_3>
+                <respuesta_4 opcion="incorrecta" respuesta = "test">
+                    Tecnología de microsoft similar a la anterior
+                </respuesta_4>
+            </test>
+        </respuestas>
+
+        <datos>
+            <autor autor="jorge">
+                <nombre>Jorge</nombre>
+                <apellido1>Lara</apellido1>
+                <apellido2>Artolazábal</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 1</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos>    
+
+    </pregunta>
+
+
+
+	<pregunta tipo = "numerica" tema = "1" id = "p2">
+
+        <enunciado> ¿La última versión de HTML desarrollada es? </enunciado>
+
+        <respuestas>
+            <numerica>
+                <min>0</min>
+                <max>10</max>
+                <respuesta opcion = "correcta" respuesta ="numerica">
+                        5
+                </respuesta>
+            </numerica>
+       </respuestas>     
+
+		<datos>
+            <autor autor="manuel">
+                <nombre>Manuel</nombre>
+                <apellido1>García</apellido1>
+                <apellido2>Cotes</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 1</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos> 
+
+    </pregunta>
+
+    <pregunta tipo = "booleano" tema = "1" id = "p3">
+
+        <enunciado> ¿Una pagina ASAP es un archivo de texto, que incluye HTML? </enunciado>
+            
+        <respuestas>
+            <booleano>
+                <respuesta_1 opcion = "incorrecta" respuesta="booleano">
+                    No
+                </respuesta_1>
+
+                <respuesta_2 opcion = "correcta" respuesta="booleano">
+                    Si
+                </respuesta_2>
+            </booleano>
+        </respuestas>
+
+		<datos>
+            <autor autor="jorge">
+                <nombre>Jorge</nombre>
+                <apellido1>Lara</apellido1>
+                <apellido2>Artolazábal</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 1</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos>  
+
+    </pregunta>
+
+
+            <!--    TEMA 2    -->
+
+	<pregunta tipo = "ordenar" tema = "2" id = "p4">
+
+        <enunciado> ¿Ordena los encabezados de menor a mayor? </enunciado>
+
+        <respuestas>
+            <ordenar>
+				<orden_4 orden = "4" respuesta= "ordenar">
+                    h1
+                </orden_4>
+                <orden_2 orden = "2" respuesta= "ordenar">
+                    h3
+                </orden_2>
+                <orden_1 orden = "1" respuesta= "ordenar">
+                    h4
+                </orden_1>
+				<orden_3 orden = "3" respuesta= "ordenar">
+                    h2
+                </orden_3>	
+            </ordenar>
+        </respuestas>     
+
+		<datos>
+            <autor autor="manuel">
+                <nombre>Manuel</nombre>
+                <apellido1>García</apellido1>
+                <apellido2>Cotes</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 2</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos> 
+
+    </pregunta>
+
+
+	<pregunta tipo = "libre" tema = "2" id = "p5">
+
+        <enunciado> ¿Como es la estructura de control de un documento HTML </enunciado>
+            
+        <respuestas>
+            <desarrollo>
+                <respuesta opcion = "correcta" respuesta = "libre">
+                    Se divide en 3 partes: Declaración del tipo de documento, cabecera(HEAD) y cuerpo(BODY)
+                </respuesta>
+            </desarrollo>
+        </respuestas>
+
+		<datos>
+            <autor autor="jorge">
+                <nombre>Jorge</nombre>
+                <apellido1>Lara</apellido1>
+                <apellido2>Artolazábal</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 2</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos> 
+
+    </pregunta>
+
+
+
+    <pregunta tipo = "multiple" tema = "2" id = "p6">
+
+        <enunciado> ¿Que etiquetas son de estilos físicos? </enunciado>
+            
+        <respuestas>
+
+            <multiple>
+                <respuesta_1 opcion = "correcta" respuesta = "multiple">
+                    &lt;b&gt;
+                </respuesta_1>
+
+                <respuesta_2 opcion = "incorrecta" respuesta = "multiple">
+                     &lt;a&gt;
+                </respuesta_2>
+                     
+                <respuesta_3 opcion = "incorrecta" respuesta = "multiple">
+                     &lt;p&gt;
+                </respuesta_3>
+
+                <respuesta_4 opcion = "correcta" respuesta = "multiple">
+                    &lt;i&gt;
+                </respuesta_4>
+            </multiple>
+
+        </respuestas>
+
+		<datos>
+            <autor autor="manuel">
+                <nombre>Manuel</nombre>
+                <apellido1>García</apellido1>
+                <apellido2>Cotes</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 2</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos> 
+
+    </pregunta>
+
+
+                <!--    TEMA 3    -->
+
+    <pregunta tipo = "booleano" tema = "3" id = "p7">
+
+        <enunciado> ¿El modelo de caja es una propiedad modificable? </enunciado>
+            
+        <respuestas>
+            <booleano>
+                <respuesta_1 opcion = "correcta" respuesta="booleano">
+                    No
+                </respuesta_1>
+
+                <respuesta_2 opcion = "incorrecta" respuesta="booleano">
+                    Si
+                </respuesta_2>
+            </booleano>
+        </respuestas>
+
+		<datos>
+            <autor autor="jorge">
+                <nombre>Jorge</nombre>
+                <apellido1>Lara</apellido1>
+                <apellido2>Artolazábal</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 3</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos>
+
+    </pregunta>
+
+
+    <pregunta tipo = "ordenar" tema = "3" id = "p8">
+
+        <enunciado> En el modelo de caja, de dentro hacia fuera ¿Cual es el orden de los elementos? </enunciado>
+
+        <respuestas>
+            <ordenar>
+                <orden_4 orden = "4" respuesta= "ordenar">
+                    Margin
+                </orden_4>
+                <orden_2 orden = "2" respuesta= "ordenar">
+                    Padding
+                </orden_2>
+                <orden_1 orden = "1" respuesta= "ordenar">
+                    Content
+                </orden_1>
+                <orden_3 orden = "3" respuesta= "ordenar">
+                    Border
+                </orden_3>	
+            </ordenar>
+        </respuestas>    
+
+		<datos>
+            <autor autor="manuel">
+                <nombre>Manuel</nombre>
+                <apellido1>Garcia</apellido1>
+                <apellido2>Cotes</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 3</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos> 
+
+    </pregunta>
+
+    <pregunta tipo = "libre" tema = "3" id = "p9">
+
+        <enunciado> ¿Qué es un selector? </enunciado>
+            
+        <respuestas>
+            <desarrollo>
+                <respuesta opcion = "correcta" respuesta = "libre">
+                   Una regla de CSS está formada por una parte llamada "selector" y otra parte llamada "declaración“ 
+                </respuesta>
+            </desarrollo>
+        </respuestas>
+
+		<datos>
+            <autor autor="jorge">
+                <nombre>Jorge</nombre>
+                <apellido1>Lara</apellido1>
+                <apellido2>Artolazábal</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 3</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos> 
+
+    </pregunta>
+
+
+        <!--    TEMA 4    -->
+
+    <pregunta tipo = "multiple" tema = "4" id = "p10">
+
+        <enunciado> En el contexto de Tecnogías Web ¿Qué es el elemento br? </enunciado>
+            
+        <respuestas>
+
+            <multiple>
+                <respuesta_1 opcion = "correcta" respuesta = "multiple">
+                    Elemento de html que produce un salto de linea en el texto.
+                </respuesta_1>
+
+                <respuesta_2 opcion = "correcta" respuesta = "multiple">
+                    Elemento line break de html.
+                </respuesta_2>
+
+                <respuesta_3 opcion = "incorrecta" respuesta = "multiple">
+                    Elemento artístico usado por Anuel.
+                </respuesta_3>
+
+                <respuesta_4 opcion = "incorrecta" respuesta = "multiple">
+                    br-o, a mí no me preguntes
+                </respuesta_4>
+            </multiple>
+
+        </respuestas>
+
+		<datos>
+            <autor autor="manuel">
+                <nombre>Manuel</nombre>
+                <apellido1>García</apellido1>
+                <apellido2>Cotes</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 4</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos> 
+
+    </pregunta>
+
+	<pregunta tipo = "test" tema = "4" id = "p11">
+
+        <enunciado> Para especificar si el atributo es obligatorio, se emplea use... </enunciado> 
+
+		<respuestas>
+            <test>
+                <respuesta_1 opcion="incorrecta"  respuesta = "test">
+                    "asked"
+                </respuesta_1>
+                <respuesta_2 opcion="incorrecta" respuesta = "test">
+                    "optional"
+                </respuesta_2>
+                <respuesta_3 opcion="correcta" respuesta = "test">	
+                    "required"
+                </respuesta_3>
+                <respuesta_4 opcion="incorrecta" respuesta = "test">
+                    "strict"
+                </respuesta_4>
+            </test>
+        </respuestas>
+
+        <datos>
+            <autor autor="jorge">
+                <nombre>Jorge</nombre>
+                <apellido1>Lara</apellido1>
+                <apellido2>Artolazábal</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 4</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos>    
+
+    </pregunta>
+
+
+    <pregunta tipo = "libre" tema = "4" id = "p12">
+
+        <enunciado> ¿Que es el espacio de nombres? </enunciado>
+            
+        <respuestas>
+            <desarrollo>
+                <respuesta opcion = "correcta" respuesta = "libre">
+                   Son conjuntos de etiquetas a las que se asocia un nombre. 
+                </respuesta>
+            </desarrollo>
+        </respuestas>
+
+		<datos>
+            <autor autor="manuel">
+                <nombre>Manuel</nombre>
+                <apellido1>Garcia</apellido1>
+                <apellido2>Cotes</apellido2>
+            </autor>
+            <info>
+                <tema>Tema: 4</tema>
+                <fecha>21/11/2021</fecha>
+            </info>
+        </datos> 
+
+    </pregunta>
+
+
+</cuestionario>

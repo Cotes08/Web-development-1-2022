@@ -1,0 +1,81 @@
+<!ENTITY lt "&#38; #60;">
+<!ENTITY gt "&#62;">
+<!ELEMENT cuestionario (pregunta+)>
+
+<!ELEMENT pregunta (enunciado, respuestas, datos)>
+<!ATTLIST pregunta tipo (test|numerica|ordenar|libre|booleano|multiple) #REQUIRED>
+<!ATTLIST pregunta tema (1|2|3|4) #REQUIRED>
+<!ATTLIST pregunta id ID #REQUIRED>
+
+<!ELEMENT enunciado (#PCDATA)>
+
+<!ELEMENT respuestas (test|numerica|ordenar|libre|booleano|multiple|desarrollo)>
+
+<!ELEMENT test (respuesta_1, respuesta_2, respuesta_3, respuesta_4)>
+
+<!ELEMENT numerica (min, max, respuesta)>
+
+<!ELEMENT ordenar (orden_4 ,orden_2, orden_1, orden_3)>
+
+<!ELEMENT desarrollo (respuesta)>
+
+<!ELEMENT booleano (respuesta_1, respuesta_2)>
+
+<!ELEMENT multiple (respuesta_1, respuesta_2, respuesta_3, respuesta_4)>
+
+<!ELEMENT respuesta (#PCDATA)>
+<!ATTLIST respuesta opcion (correcta|incorrecta) #REQUIRED>
+<!ATTLIST respuesta respuesta (numerica|libre) #REQUIRED>
+
+<!ELEMENT respuesta_1 (#PCDATA)>
+<!ATTLIST respuesta_1 opcion (correcta|incorrecta) #REQUIRED>
+<!ATTLIST respuesta_1 respuesta (test|booleano|multiple) #REQUIRED>
+
+<!ELEMENT respuesta_2 (#PCDATA)>
+<!ATTLIST respuesta_2 opcion (correcta|incorrecta) #REQUIRED>
+<!ATTLIST respuesta_2 respuesta (test|booleano|multiple) #REQUIRED>
+
+<!ELEMENT respuesta_3 (#PCDATA)>
+<!ATTLIST respuesta_3 opcion (correcta|incorrecta) #REQUIRED>
+<!ATTLIST respuesta_3 respuesta (test|multiple) #REQUIRED>
+
+<!ELEMENT respuesta_4 (#PCDATA)>
+<!ATTLIST respuesta_4 opcion (correcta|incorrecta) #REQUIRED>
+<!ATTLIST respuesta_4 respuesta (test|multiple) #REQUIRED>
+
+<!ELEMENT orden_1 (#PCDATA)>
+<!ATTLIST orden_1 orden (1|2|3|4) #REQUIRED>
+<!ATTLIST orden_1 respuesta (ordenar) #REQUIRED>
+
+<!ELEMENT orden_2 (#PCDATA)>
+<!ATTLIST orden_2 orden (1|2|3|4) #REQUIRED>
+<!ATTLIST orden_2 respuesta (ordenar) #REQUIRED>
+
+<!ELEMENT orden_3 (#PCDATA)>
+<!ATTLIST orden_3 orden (1|2|3|4) #REQUIRED>
+<!ATTLIST orden_3 respuesta (ordenar) #REQUIRED>
+
+<!ELEMENT orden_4 (#PCDATA)>
+<!ATTLIST orden_4 orden (1|2|3|4) #REQUIRED>
+<!ATTLIST orden_4 respuesta (ordenar) #REQUIRED>
+
+<!ELEMENT min (#PCDATA)>
+<!ELEMENT max (#PCDATA)>
+
+
+<!ELEMENT datos (autor,info)>
+
+<!ELEMENT autor (nombre,apellido1,apellido2?)>
+<!ATTLIST autor autor CDATA #REQUIRED>
+
+<!ELEMENT info (tema, fecha)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+
+<!ELEMENT tema (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+
+
+

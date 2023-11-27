@@ -1,0 +1,422 @@
+
+/*
+    Estas son las dos clases principales que van a englobar todo el contenido
+*/
+.fondo
+{
+    font-family: Helvetica;
+    background-image: url("Imagenes/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.color
+{
+    background-color: #f7f7f9;
+    margin-left: 352px;
+    margin-right: 352px;
+}
+
+
+
+
+
+
+/*
+    CSS Necesario para el menu y el menu desplegable
+*/
+/*Esto es para gestionar la clase entera del menu*/
+.menu {
+    background-color: #f7f7f9;
+    padding-bottom: 100px;  
+    margin:auto;
+    width:fit-content;
+    
+}
+
+/*Todo lo de aqui abajao es necesario para poder 
+ hacer que funcione el submenu como por ejemplo
+ cuanto espaci ose le dejara a las secciones del submenu
+ el hoover si tendra algun color...
+*/
+ul, ol {
+    list-style:none;
+    display:inline;
+    
+}
+
+.nav > li {
+    float:left; 
+}
+
+.nav li a {
+    background-color:#f7f7f9;
+    color: #c71585;
+    text-decoration:none;
+    padding: 10px 12px;
+    display:block;
+}
+
+.nav li ul a:hover {
+    background-color: rgb(206, 204, 204);
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+
+
+
+
+/*
+    CSS necesario para el cuerpo y el encabezado
+*/
+
+/*El padre_not es una version del padre pero menos completa orientado a que sea mas limpia y sin brode*/
+.padre_not {
+    /* IMPORTANTE */
+    background-color: #f7f7f9;
+    text-align: center;
+    /* Revisar */
+    margin: 5px;
+}
+
+/*Es el encargado de gestionar todo el div donde haya varios elementos*/
+.padre {
+    /* IMPORTANTE */
+    background-color: #f7f7f9;
+    text-align: center;
+    /* Revisar */
+    border-radius: 20px;
+    border-color: #c71585;
+    border-style:ridge;
+    border-width: 5px;
+    margin: 5px;
+}
+/*Padre especifico para las ofertas flash*/
+.padre_flash
+{
+    background-color: #f7f7f9;
+    text-align: center;
+    /* Revisar */
+    border-radius: 20px;
+    border-color: red;
+    border-style:ridge;
+    border-width: 10px;
+    margin: 5px;
+} 
+
+
+/*Esos elementos son personalizados por el hijo*/
+.hijo {
+    padding: 10px;
+    margin: 10px;
+      
+    /* IMPORTANTE */
+    display: inline-block;  
+}
+
+/*Distribucion del espacio de noticias*/
+.espacio_noticias
+{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/*Clase que hace que todos los a al pasar por encima tengan un color morado*/
+a:hover{
+    
+    background-color: #c71585;
+}
+
+.accion_nov a:hover
+{
+    background-color: aqua;
+}
+
+.accion_dest a:hover
+{
+    background-color: green;
+}
+
+.accion_cons a:hover
+{
+    background-color:black;
+}
+/*Centrar se utiliza en varios lados pero como su nombre indica */
+.centrar
+{
+    text-align: center;
+}
+
+/* Clase para quitar los puntos de las listas */
+.quitarpuntos
+{
+    list-style: none;
+    text-align: left;
+}
+.quitarpuntos li
+{
+    padding: 50px;
+}
+
+/*Clase para distribuir elementos sobre el grid*/
+.gridelementos
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: justify;
+}
+.gridelementos p
+{
+    padding: 10px;
+}
+/*Grid elementos pero especifico para las noticias*/
+.gridelementos_noticia
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.gridelementos_noticia p
+{
+    padding: 20px;
+    margin-top:-25px;
+}
+/*Cambio de fuente y estilo en la seccion de novedades*/
+.nov
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px; 
+}
+/*Cambio de fuente y estilo en la seccion de destacadas*/
+.dest
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+/*Cambio de fuente y estilo en la seccion de consolas*/
+.cons
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+/*Cambio de fuente y estilo en la seccion de noticias*/
+.text
+{
+    font-family: Helvetica;
+    font-size: 30px;
+    color: #c71585;
+}
+/*Cambio de fuente y estilo en la seccion de ofertas flash*/
+.text_flash
+{
+    font-family: Helvetica;
+    font-size: 30px;
+    color:  rgb(180, 14, 14)
+}
+.blanco
+{
+    color: #f7f7f9;
+}
+
+
+/*
+    CSS necesario para el footer
+*/
+
+/*El footer propiamente dicho*/
+.footer
+{
+    display: grid;
+    background-color: grey;
+    grid-template-columns: auto auto auto;
+    padding: 3px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+/*Para poder colocar elementos a la derecha*/
+.derecha
+{
+   text-align: right;
+}
+/*Para poder colocar elementos a la izquierda*/
+.izquierda
+{
+    text-align: left;
+}
+/*Para poder distribuir el footer*/
+.grid_footer
+{
+    margin: 10px;
+}
+
+
+
+/*Para el formulario*/
+
+
+.contenido2
+{
+	display: grid;
+	grid-template-columns: auto auto; 
+}
+
+
+
+.form-style-2
+{
+	margin-left:310px;
+    text-align: center;
+    max-width: 500px;
+	font-family: Arial, Helvetica, sans-serif;
+    background-color:#f5f3f371;
+    border-radius: 20px;
+    border-color: #e6e4e4;
+    border-style:ridge;
+    border-width: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-style-2 p
+{
+    text-align: left;
+}
+
+.form-style-2-heading
+{
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+
+.form-style-2 label
+{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+
+.form-style-2 label > span
+{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+
+.form-style-2 .tel-number-field
+{
+	width: 185px;
+	text-align: center;
+}
+
+.form-style-2 .fecha
+{
+	width: 40px;
+	text-align: center;
+}
+
+.form-style-2 .fecha1
+{
+	width: 40px;
+	text-align: center;
+}
+
+.form-style-2 .fecha2
+{
+	width: 60px;
+	text-align: center;
+}
+
+.form-style-2 .tel-number-field
+{
+	width: 100px;
+	text-align: center;
+}
+
+.form-style-2 input.input-field, .form-style-2 .select-field
+{
+    width: 48%;
+}
+
+.form-style-2 input.input-field,
+.form-style-2 .textarea-field, 
+.form-style-2 .dni,
+.form-style-2 .select-field,
+.form-style-2 .fecha,
+.form-style-2 .fecha1,
+.form-style-2 .fecha2,
+.form-style-2 .tel-number-field
+{
+	box-sizing: border-box;
+	
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+.form-style-2 .input-field:focus, 
+.form-style-2 .dni:focus,
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus,
+.form-style-2 .fecha:focus,
+.form-style-2 .fecha1:focus,
+.form-style-2 .fecha2:focus
+{
+	border: 1px solid #c71585;
+}
+
+.form-style-2 .textarea-field
+{
+	height:100px;
+	width: 55%;
+}
+
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button],
+.form-style-2 input[type=reset],
+.form-style-2 input[type=checkbox]
+{
+	padding: 8px 15px 8px 15px;
+	background: #c71585;
+	color: white;
+	border-radius: 10px;
+    margin: 10px;
+}
+
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover,
+.form-style-2 input[type=reset]:hover,
+.form-style-2 input[type=checkbox]:hover
+{
+	opacity: 80%;
+	color: rgb(220, 226, 228);
+}
